@@ -1,0 +1,13 @@
+version: '3.7'
+services: 
+    minecraft:
+        image: itzg/minecraft-bedrock-server
+        volumes:
+            - "./minecraft:/data"
+        ports:
+            - "19132:19132"
+        environment: 
+            EULA: "TRUE"
+            SERVER_NAME: "PULVERIDON"
+            GAMEMODE: "survival"
+
